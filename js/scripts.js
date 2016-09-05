@@ -6,15 +6,15 @@
         // The rest of your code goes here!
         $( ".light" ).off().on('click',function() {
               var color =$(this ).data( "light" );
-              $( ".container" ).css( "background-color",color )
-                $( ".light" ).toggle( "slow" );
-                $(".selected-light").toggle();
+              $( ".selected-light" ).css( "background-color",color )
+                $( ".light" ).toggle("slow"  );
+                $(".selected-light").toggle("slow" );
         });
     $( ".selected-light" ).off().on('click',function() {
              
               $( this).css( "background-color","" );
-               $(".selected-light").toggle();
-                $( ".light" ).toggle( "slow" );
+               $(".selected-light").toggle( "slow");
+                $( ".light" ).toggle("slow"  );
                
         });
         
